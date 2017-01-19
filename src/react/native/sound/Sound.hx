@@ -1,6 +1,6 @@
 package react.native.sound;
 
-@:jsRequire('react-native-sound')
+@:jsRequire('react-native-sound', 'default')
 extern class Sound {
 	public function new(filename:String, ?basePath:String, ?onError:OnError);
 	function isLoaded():Bool; // Return true if the sound has been loaded.
