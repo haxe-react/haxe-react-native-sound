@@ -6,7 +6,7 @@ extern class Sound {
 	function isLoaded():Bool; // Return true if the sound has been loaded.
 	function play(?cb:OnEnd):Void;
 	function pause():Void;
-	function stop():Void;
+	function stop(?cb:Void->Void):Void;
 	function release():Void;
 	function getDuration():Int;
 	function getNumberOfChannels():Int;
