@@ -2,6 +2,12 @@ package react.native.sound;
 
 @:jsRequire('react-native-sound')
 extern class Sound {
+	
+	static var MAIN_BUNDLE: String;
+	static var DOCUMENT: String;
+	static var LIBRARY: String;
+	static var CACHES: String;
+	
 	public function new(filename:String, ?basePath:String, ?onError:OnError);
 	function isLoaded():Bool; // Return true if the sound has been loaded.
 	function play(?cb:OnEnd):Void;
